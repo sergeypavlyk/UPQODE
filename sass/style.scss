@@ -1,2 +1,13 @@
 @import 'common';
 @import 'var';
+@import 'home';
+
+@font-face{
+    font-family: 'BEYNO';
+    src: url(../BEYNO_font/BEYNO.otf), url(../BEYNO_font/BEYNO.ttf);
+
+}
+@font-face{
+    font-family: 'Meriad Pro';
+    src: url(../MeriadPro_font/MyriadPro-Regular.ttf);
+}
