@@ -93,19 +93,39 @@
         </div>
     </header>
     <main>
-        <div class="block_banner" id="banner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="title_box">
-                            <div class="title">
-                                <span class="reg">Creative</span>
-                                <span class="yell">Design agency</span>
-                            </div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea numquam, mollitia dolore saepe at voluptas sit nostrum maiores accusantium nulla laudantium non excepturi incidunt eligendi sed eaque alias doloremque ducimus.</p>
+        <div class="bd-example">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item d-flex h-100 align-items-center justify-content-center active" data-interval="7000">
+                    <img src="img/banner.png" class="d-block w-100" alt="...">
+                    <div class="inner_info">
+                        <div class="title">
+                            <span class="reg">Creative</span>
+                            <span class="yell">Design agency</span>
+                        </div>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, recusandae explicabo saepe eaque incidunt neque, voluptate doloremque in possimus suscipit quibusdam ullam quo nobis mollitia aspernatur optio quidem error reprehenderit?</p>
                         </div>
                     </div>
+                <div class="carousel-item" data-interval="3000">
+                    <img src="img/banner.png" class="d-block w-100" alt="...">
                 </div>
+                <div class="carousel-item" data-interval="1000">
+                    <img src="img/banner.png" class="d-block w-100" alt="...">
+                </div>    
+            </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
         </div>
         <div class="about" id="about">
@@ -156,57 +176,98 @@
                     </div>
                 </div>
             </div>
-        </div>      
-        <div class="products" id="products">
-            <div class="overlay_about">
-                <div class="title">
-                    <span class="reg">Our</span>
-                    <span class="yell">Products</span>
+        </div> 
+        <div class="bd-example textalign">
+            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-interval="7000">
+                        <div class="products d-block w-100" id="products">
+                            <div class="overlay_about">
+                                <div class="title">
+                                    <span class="reg">Our</span>
+                                    <span class="yell">Products</span>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <div class="row first_row">
+                                    <div class="col-md-4 col-sm-12 product_item">
+                                        <img src="img/prod1.png" alt="">
+                                        <h2>TITLE</h2>
+                                        <h3>Best product</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 product_item">
+                                        <img src="img/prod2.png" alt="">
+                                        <h2>TITLE</h2>
+                                        <h3>Best product</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 product_item">
+                                        <img src="img/prod3.png" alt="">
+                                        <h2>TITLE</h2>
+                                        <h3>Best product</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                                <div class="row second_row">
+                                    <div class="col-md-4 col-sm-12 product_item">
+                                        <img src="img/prod4.png" alt="">
+                                        <h2>TITLE</h2>
+                                        <h3>Best product</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 product_item">
+                                        <img src="img/prod5.png" alt="">
+                                        <h2>TITLE</h2>
+                                        <h3>Best product</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                    <div class="col-md-4 col-sm-12 product_item">
+                                        <img src="img/prod6.png" alt="">
+                                        <h2>TITLE</h2>
+                                        <h3>Best product</h3>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>            
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="3000">
+                        <div class="products d-block w-100" id="products">
+                            <div class="overlay_about">
+                                <div class="title">
+                                    <span class="reg">Our</span>
+                                    <span class="yell">Products</span>
+                                </div>
+                            </div>            
+                        </div>
+                    </div>
+                    <div class="carousel-item" data-interval="1000">
+                        <div class="products d-block w-100" id="products">
+                            <div class="overlay_about">
+                                <div class="title">
+                                    <span class="reg">Our</span>
+                                    <span class="yell">Products</span>
+                                </div>
+                            </div>            
+                        </div>
+                    </div>    
                 </div>
-            </div>
-            <div class="container">
-                <div class="row first_row">
-                    <div class="col-md-4 col-sm-12 product_item">
-                        <img src="img/prod1.png" alt="">
-                        <h2>TITLE</h2>
-                        <h3>Best product</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="col-md-4 col-sm-12 product_item">
-                        <img src="img/prod2.png" alt="">
-                        <h2>TITLE</h2>
-                        <h3>Best product</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="col-md-4 col-sm-12 product_item">
-                        <img src="img/prod3.png" alt="">
-                        <h2>TITLE</h2>
-                        <h3>Best product</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="row second_row">
-                    <div class="col-md-4 col-sm-12 product_item">
-                        <img src="img/prod4.png" alt="">
-                        <h2>TITLE</h2>
-                        <h3>Best product</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="col-md-4 col-sm-12 product_item">
-                        <img src="img/prod5.png" alt="">
-                        <h2>TITLE</h2>
-                        <h3>Best product</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="col-md-4 col-sm-12 product_item">
-                        <img src="img/prod6.png" alt="">
-                        <h2>TITLE</h2>
-                        <h3>Best product</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div> 
+        </div>   
         <div class="skills" id="skills">
             <div class="container">
                 <div class="row">
@@ -287,13 +348,13 @@
                                             </div>
                                             <div class="second_line">
                                                 <div class="comment">
-                                                    <input type="text" name="" id="pad" placeholder="Your Comment" required>
+                                                    <textarea placeholder="Message" required></textarea>
                                                 </div>
                                             </div>
                                             <div class="third_line">
                                                 <label>
                                                     <input type="checkbox" id="check" required> I like your company
-                                                    <span class="checkmark"></span>
+                                                    <span class="checkbox"></span>
                                                 </label>
                                                 <input type="submit" id="submit" value="Send">
                                             </div>

@@ -104,44 +104,50 @@ header{
     
     
 }
-.block_banner{
-    position: relative;
-    z-index: 5;
-    background: url(../img/banner.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 93vh;
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+  }
+.carousel-item{
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .title_box{
-        .title{
-            font-family: 'Lato', sans-serif;
-            font-size: 64px;
-            font-weight: bold;
-            text-transform: uppercase;
-            .reg{
-                color: #fff;
-            }
-            .yell{
-                color: #fff200;
-            }
-        }
-        p{
-            font-family: 'Lato', sans-serif;
-            font-size: 16px;
-            font-weight: 400;
+    img{
+        position: relative;
+    }
+    .inner_info{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .title{
+        font-family: 'Lato', sans-serif;
+        font-size: 64px;
+        font-weight: bold;
+        text-transform: uppercase;
+        .reg{
             color: #fff;
-            line-height: 2;
-            padding-top: 15px;
+        }
+        .yell{
+            color: #fff200;
         }
     }
-   
-    
-    
+    p{
+        font-family: 'Lato', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #fff;
+        line-height: 2;
+        padding-top: 15px;
+        max-width: 720px;
+        width: 100%;
+    }
+}
+.textalign{
+    .products{
+        text-align: left;
+    }
 }
 .about{ 
     .title_about{
@@ -478,6 +484,9 @@ header{
                 max-width: 240px;
                 width: 100%;
                 height: 50px;
+                color: #fff;
+                padding: 18px;
+                overflow: hidden;
                 @media screen and (max-width: 992px){
                     width: 100%;
                     max-width: 490px;
@@ -496,13 +505,16 @@ header{
             }
         }
         .second_line{
-            input{
+            textarea{
                 border: 1px solid #b7b7b7;
                 background-color: inherit;
                 max-width: 490px;
                 width: 100%;
                 height: 145px;
                 margin: 10px 0;
+                color: #fff;
+                padding: 18px;
+                overflow: hidden;
                 &::placeholder{
                     color: #b7b7b7;
                     padding-left: 18px;
@@ -514,6 +526,22 @@ header{
             justify-content: space-between;
             label{
                 padding-top: 10px;
+                padding-left: 30px;
+            }
+            #check{
+                position: relative;
+                display: none;
+            }
+            .checkbox{
+                position: absolute;
+                width: 20px;
+                height: 20px;
+                border: 1px solid #b7b7b7;
+                bottom: 17px;
+                left: 15px;
+            }
+            input[type=checkbox]:checked ~ .checkbox{
+                background-color: #ffff00;
             }
         }
         
@@ -543,6 +571,10 @@ header{
             font-family: 'Meriad Pro', sans-serif;
             display: block;
             padding-left: 70px;
+            text-decoration: none;
+            &:hover{
+                color: #ffff00;
+            }
             &:first-child{
                 margin-bottom: 30px;
             }
@@ -552,9 +584,6 @@ header{
         }
     }
 }
-
-
-
 footer{
     width: 100%;
     min-height: 60px;
